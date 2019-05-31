@@ -11,13 +11,12 @@ class App extends React.Component {
 
   render() {
     const { count } = this.state
-
     return (
       <div>
         <h1>Hello World!!</h1>
-        <h2 className={count > 10 ? 'warning' : ''}>
+        <h3 className={count > 10 ? 'warning' : ''}>
           Count: {this.state.count}
-        </h2>
+        </h3>
         <div className="arrange">
           <button
             onClick={() => this.setState(state => ({ count: state.count + 1 }))}
